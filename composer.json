@@ -1,0 +1,30 @@
+{
+    "name": "soswapp/admin-navlist.soswapp",
+    "description": "Returns JSON data of project's navigation list",
+    "keywords": ["php", "soswapp","seven","os"],
+    "homepage": "https://github.com/soswapp/admin-navlist.soswapp",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ikechukwu Okalia",
+            "email": "dev@ikechukwuokalia.com"
+        },
+        {
+            "name": "Tym Frontiers Ltd.",
+            "email": "dev@tymfrontiers.com"
+        }
+    ],
+    "require": {
+      "tymfrontiers-cdn/php-session" : ">=0.1@stable",
+      "tymfrontiers-cdn/php-http-header" : ">=0.1@stable",
+      "tymfrontiers-cdn/php-data" : ">=0.1@stable",
+      "tymfrontiers-cdn/php-generic" : ">=0.1@stable"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+          "SOS\\" : "src/"
+        }
+    }
+}
