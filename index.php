@@ -60,6 +60,7 @@ $query = "SELECT wp.name, wp.path, wp.access_rank, wp.access_rank_strict, wp.tit
                     FROM :db:.work_path
                     WHERE `domain` = '{$db->escapeValue($params['group'])}'
                     AND `path` = '/'
+                    AND type = 'ALTER'
                     LIMIT 1
                  )
                  AND user = '{$db->escapeValue($user)}'
