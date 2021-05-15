@@ -27,7 +27,7 @@ if (!$params || !empty($gen->errors)) {
   exit;
 }
 $rank = empty($params['access_rank']) ? (
-  $session instanceof Session ? $session->access_rank : 0
+  $session instanceof Session ? $session->access_rank() : 0
 ) : $params['access_rank'];
 $user = empty($params['user']) ? (
   $session instanceof Session ? $session->name : "NA"
